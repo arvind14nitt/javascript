@@ -13,4 +13,22 @@ console.log(util.myBrother);
 //console.log(util.mySister);
 console.log(sibling);
 //alert('Hello World, ${myName}');
+//---------------------------------------------------------
+// const and variables
+//---------------------------------------------------------
+console.log("Hello const and variables!");// here we have created a string on need
+let var1 = "here is next value";// created variable and store the string
+console.log(var1);
+console.log(var1);// we re-use the var again
 
+console.log("constant can be defined using const keyword");
+const var2 = "here is another val"; // this is readable, cant be modified
+console.log(var2);
+console.log(var2);//reused
+//var2 = "here another assignment";//re-assignment doesn't work with const
+var1 = "variables can be re-assigned";//variable re-assignment work
+console.log(var1);
+
+//----------------------------------------------------------
+//operators
+//----------------------------------------------------------
