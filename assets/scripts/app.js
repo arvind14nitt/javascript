@@ -32,3 +32,31 @@ console.log(var1);
 //----------------------------------------------------------
 //operators
 //----------------------------------------------------------
+console.log(5+10);//+ can be used as addition operator
+console.log("My name is"+" "+"Arvind Yadav");//+ used as concatenation operator
+console.log(5*10);//* operator
+console.log(10/5);//division operator
+console.log(10+5/5);//
+console.log(10===10);//equal operator
+console.log(10>5);//greater than
+
+//-----------------------------------------------------------
+//Functions and Parameters
+//---------------------------------------
+function display_name(name = "Arvind Yadav"){
+   console.log(name);
+}
+
+display_name();
+display_name("Rishabh Yadav");
+
+function return_sum(a,b){
+   return a+b;
+}
+
+const sum = return_sum(10,20);
+console.log(sum);
+
+let sum_var = return_sum(5,15);
+console.log(sum_var);
+
