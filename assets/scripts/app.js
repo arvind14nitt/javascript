@@ -60,3 +60,65 @@ console.log(sum);
 let sum_var = return_sum(5,15);
 console.log(sum_var);
 
+//--------------------------------------------
+//Arrow functions ()=>{}
+//---------------------------------------
+// These functions doesnt need a name
+//for sum
+(a,b)=>{return a=b;}
+
+//Objects and classes
+//Objects can be used to group multiple values
+const user = {    // we have created a object
+   name: "Arvind", 
+   age: 35
+};
+console.log(user.name);
+console.log(user.age);//user is the object
+
+//Objects can also store functions-
+
+const user1 = {
+	name: "Arvind",
+	age: 35,
+	display_name(){
+		console.log(this.name);
+	},
+	display_age(){
+		console.log(this.age);
+	},
+	edit_name(name){
+		this.name = name;
+	}
+
+};
+
+user1.display_name();
+user1.edit_name("hoi poi");
+user1.display_name();
+
+
+//CLasses created the blue print to create the object
+class user2{
+	greet(){console.log(name)}
+	greet_with_hello(){console.log("hello")}
+	constructor(name){this.name = name}
+
+};
+
+const user2_obj = new user2("MoJo MoJo");
+console.log(user2_obj.greet_with);
+
+
+//Arrays and Array like method map
+const hobbies = [];//empty array
+console.log(hobbies);
+
+const hobbies1 = ["playing", "gaming", "coding"];
+console.log(hobbies1[1]);
+
+//arrays have some pre-defined methods in javascript which we can use like push, findIndex etc
+
+const arr = hobbies1.map((item)=> "text" + item);
+
+console.log(arr[2]);
